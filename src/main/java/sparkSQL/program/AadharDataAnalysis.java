@@ -5,7 +5,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 /**
- * Hello world!
+ * Data Analysis on AadharDataset
  *
  */
 public class AadharDataAnalysis {
@@ -74,8 +74,7 @@ public class AadharDataAnalysis {
 				.write().format("com.databricks.spark.csv").option("delimiter", "|")
 				.option("timestampFormat", "yyyy-MM-dd")
 				.save(outputPath+"/Bottom3IdentityGeneratedStatesForFemale/");
-
-		// df.show();
+		
 
 	}
 }
